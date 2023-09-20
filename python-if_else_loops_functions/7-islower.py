@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 def islower(c):
     leter_to_check = ord(c)
 

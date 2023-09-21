@@ -10,4 +10,4 @@ if res > 5:
 elif res == 0:
     print(f"Last digit of {number} is {res} and is 0")
 elif res < 6 and not 0:
-    print(f"Last digit of {number} is {res} and is less than 6 and not 0")cd
+    print(f"Last digit of {number} is {res} and is less than 6 and not 0")

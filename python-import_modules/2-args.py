@@ -2,11 +2,12 @@
 if __name__ == "__main__":
     from sys import argv
 
-    if len(argv) == 1:
-        print("{} arguments.".format(len(argv) - 1))
-    elif len(argv) == 2:
-        print("{} argument:\n{}: {}".format(len(argv) - 1, len(argv) - 1, argv[1]))
-    elif len(argv) > 2:
-        print("{} arguments:".format(len(argv)))
-        for f in range(1, len(argv)):
+    a = len(argv)
+    if a == 1:
+        print("{} arguments.".format(a - 1))
+    elif a == 2:
+        print("{} argument:\n{}: {}".format(a - 1, a - 1, argv[1]))
+    elif a > 2:
+        print("{} arguments:".format(a))
+        for f in range(1, a):
             print("{}: {}".format(f, argv[f]))

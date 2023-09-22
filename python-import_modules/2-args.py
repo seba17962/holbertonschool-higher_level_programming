@@ -6,7 +6,8 @@ if __name__ == "__main__":
     if a == 1:
         print("{} arguments.".format(a - 1))
     elif a == 2:
-        print("{} argument:\n{}: {}".format(a - 1, a - 1, argv[1]))
+        print("{} argument:\n{}: {}".format(a - 1))
+        print("{}: {}".format(a - 1, argv[1]))
     elif a > 2:
         print("{} arguments:".format(a))
         for f in range(1, a):

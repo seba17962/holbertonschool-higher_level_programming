@@ -3,5 +3,8 @@ def multiple_returns(sentence):
     if sentence:
         length = len(sentence)
         first_char = sentence[0]
-        return (length, first_char)
-    return(None)
+        tuple_sentence = (length, first_char)
+        return tuple_sentence
+    length = len(sentence)
+    tuple_sentence = (length, None)
+    return(tuple_sentence)

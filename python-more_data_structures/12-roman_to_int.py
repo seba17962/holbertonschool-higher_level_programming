@@ -19,7 +19,7 @@ def roman_to_int(roman_string):
         for i in range(len(roman_string)):
             if roman_string[i] in roman:
                 if i + 1 < len(roman_string):
-                    if roman_string[i] < roman_string[i + 1]:
+                    if roman[roman_string[i]] < roman[roman_string[i + 1]]:
                         count -= roman[roman_string[i]]
                     else:
                         count += roman[roman_string[i]]

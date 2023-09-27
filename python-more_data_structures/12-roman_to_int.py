@@ -13,6 +13,9 @@ def roman_to_int(roman_string):
             'M': 1000
             }
         count = 0
+        for letter in roman_string:
+            if letter not in roman:
+                return 0
         for i in range(len(roman_string)):
             if roman_string[i] in roman:
                 if i + 1 < len(roman_string):

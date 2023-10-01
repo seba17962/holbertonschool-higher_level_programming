@@ -17,3 +17,9 @@ yours?
 Traceback (most recent call last):
 TypeError: text must be a string
 
+>>> text_indentation("""what happen if you dont pass only text""")
+what happen if you dont pass only text
+
+>>> text_indentation("""and if you pass more""","""than two arguments""")
+Traceback (most recent call last):
+TypeError: text_indentation() takes 1 positional argument but 2 were given

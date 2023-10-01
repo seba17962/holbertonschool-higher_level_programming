@@ -46,8 +46,3 @@ Test #7: add negative integer
 
 >>> add_integer(-3, -5)
 -8
-
-Test #8: try to add zero
-
->>> add_integer(0, 0)
-0

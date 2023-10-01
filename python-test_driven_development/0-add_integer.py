@@ -4,6 +4,8 @@
     and it's tested on /tests folder.
 
 """
+
+
 def add_integer(a, b=98):
     """
     Adds a and b just if they're int or floats,

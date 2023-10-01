@@ -1,35 +1,25 @@
 #IMPORT MODULE#
->>>say_my_name = __import__('3-say_my_name).say_my_name
+>>> say_my_name = __import__('3-say_my_name').say_my_name
 
-Test #0: None arguments
->>> say_my_name()
+>>> say_my_name("Jhon", "Smith")
+My name is Jhon Smith
+
+>>> say_my_name(4, 5)
 Traceback (most recent call last):
-...
-TypeError: say_my_name() missing 2 required arguments: 'first_name' and 'last_name'
-
-Test #1: One argument, first name only.
->>> say_my_name('John')
-Traceback (most recent call last):
-...
-TypeError: say_my_name() takes exactly two arguments (1 given)
-
-Test #2: Two arguments - correct order of names.
->>> say_my_name("John", "Doe")
-My name is John Doe
-
-
-Test #3: Three arguments - incorrect order of names.
->>> say_my_name(last_name="Doe", first_name='John')
-My name is John Doe
-
-Test #4: argument not str
->>> say_my_name(3, 'Doe')
-Traceback (most recent call last):
-...
 TypeError: first_name must be a string
 
-Test #5: argument not str
->>> say_my_name('John', 6789)
+>>> say_my_name("Jhon", 5)
 Traceback (most recent call last):
-...
 TypeError: last_name must be a string
+
+>>> say_my_name(4, "Smith")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name(4)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'

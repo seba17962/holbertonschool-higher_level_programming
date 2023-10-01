@@ -47,7 +47,7 @@ Test #7: add negative integer
 >>> add_integer(-3, -5)
 -8
 
-Test #8: try to add zero
+Test #11: return type value
 
->>> add_integer(0, 0)
-0
+>>> type(add_integer(5, 5))
+<class 'int'>

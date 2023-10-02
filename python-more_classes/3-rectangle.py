@@ -1,10 +1,27 @@
 #!/usr/bin/python3
-"""create a class"""
+"""_summary_
+
+    Raises:
+        TypeError: _description_
+        ValueError: _description_
+        TypeError: _description_
+        ValueError: _description_
+
+    Returns:
+        _type_: _description_
+    """
 
 
 class Rectangle:
-    """pass"""
+    """_summary_
+    """
     def __init__(self, width=0, height=0):
+        """_summary_
+
+        Args:
+            width (int, optional): _description_. Defaults to 0.
+            height (int, optional): _description_. Defaults to 0.
+        """
         self.height = height
         self.width = width
 

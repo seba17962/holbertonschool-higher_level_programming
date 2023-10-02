@@ -10,7 +10,7 @@ class Rectangle:
     """
     pass
     """
-    def __init__(self, width):
+    def __init__(self, width=0, height=0):
         self.__width = 0
         self.__height = 0
 

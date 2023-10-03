@@ -55,6 +55,10 @@ class Rectangle:
             raise TypeError("rect_2 must be an instance of Rectangle")
         return rect_1 if rect_1.area() >= rect_2.area() else rect_2
 
+    @classmethod
+    def square(cls, size=0):
+        return (cls(size, size))
+
     def area(self):
         return self.__height * self.__width
 
@@ -78,10 +82,6 @@ class Rectangle:
 
     def __repr__(self):
         return (f"Rectangle({self.__width}, {self.__height})")
-
-    @classmethod
-    def square(cls, size=0):
-        return cls(size, size)
 
     def __del__(self):
         Rectangle.number_of_instances -= 1

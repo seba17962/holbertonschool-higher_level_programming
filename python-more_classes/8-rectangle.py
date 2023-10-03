@@ -61,7 +61,7 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
-        
+
     def area(self):
         return self.__height * self.__width
 

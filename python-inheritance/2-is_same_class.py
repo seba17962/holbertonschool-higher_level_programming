@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """_summary_
 """
+
+
 def is_same_class(obj, a_class):
     """_summary_
 
@@ -11,7 +13,5 @@ def is_same_class(obj, a_class):
     Returns:
         _type_: _description_
     """
-    if isinstance(type(obj), a_class):
-        return True
-    else:
-        return False
+    return type(obj) is a_class
+ 

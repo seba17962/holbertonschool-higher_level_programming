@@ -14,4 +14,3 @@ def is_same_class(obj, a_class):
         _type_: _description_
     """
     return type(obj) is a_class
- 

@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """_summary_
 """
+
+
 def inherits_from(obj, a_class):
     """_summary_
 

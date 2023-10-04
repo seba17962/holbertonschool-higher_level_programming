@@ -12,4 +12,3 @@ def is_kind_of_class(obj, a_class):
         _type_: _description_
     """
     return isinstance(obj, a_class)
-        

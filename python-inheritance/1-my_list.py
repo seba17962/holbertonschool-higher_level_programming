@@ -12,6 +12,6 @@ class MyList(list):
     def print_sorted(self):
         """_summary_
         """
-        
+
         if all(isinstance(i, int) for i in self):
             print(sorted(self))

@@ -1,6 +1,6 @@
 #IMPORT MODULE#
 
-MyList = __import__('1-my_list').MyList
+>>>MyList = __import__('1-my_list').MyList
 
 # Test Case 1: Empty list
 >>> MyList = __import__('1-my_list').MyList

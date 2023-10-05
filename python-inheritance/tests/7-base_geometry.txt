@@ -1,41 +1,46 @@
 #IMPORT MODULE#
 
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("lala", "lala")
 Traceback (most recent call last):
 TypeError: lala must be an integer
-
 >>> bg.integer_validator("lala", -2)
 Traceback (most recent call last):
 ValueError: lala must be greater than 0
-
->>> bg.integer_validator(4, 10)
-
+>>> bg.integer_validator("lala", -1000)
+Traceback (most recent call last):
+ValueError: lala must be greater than 0
 >>> bg.integer_validator("lala", 0)
 Traceback (most recent call last):
 ValueError: lala must be greater than 0
-
 >>> bg.integer_validator("lala", 123)
 >>> bg.integer_validator("lala", [1, 2])
 Traceback (most recent call last):
 TypeError: lala must be an integer
-
 >>> bg.integer_validator("lala", (1, 2))
 Traceback (most recent call last):
 TypeError: lala must be an integer
-
 >>> bg.integer_validator("lala", {1, 2})
 Traceback (most recent call last):
 TypeError: lala must be an integer
-
 >>> bg.integer_validator("lala", [[1, 2]])
 Traceback (most recent call last):
 TypeError: lala must be an integer
-
->>> bg.integer_validator("lala", {'name': 'Gabriel'})
+>>> bg.integer_validator("lala", {'name': 'Mateo'})
 Traceback (most recent call last):
 TypeError: lala must be an integer
-
 >>> bg.integer_validator(123, 777)
+>>> bg.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
+>>> bg.integer_validator("lala", True)
+Traceback (most recent call last):
+TypeError: lala must be an integer
+>>> bg.integer_validator("lala", None)
+Traceback (most recent call last):
+TypeError: lala must be an integer
+>>> bg.integer_validator("lala", False)
+Traceback (most recent call last):
+TypeError: lala must be an integer
+>>> bg.integer_validator(455, False)

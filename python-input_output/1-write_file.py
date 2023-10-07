@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """_summary_
 """
+
+
 def write_file(filename="", text=""):
     """_summary_
 

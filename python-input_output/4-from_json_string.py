@@ -13,5 +13,6 @@ def from_json_string(my_str):
     Returns:
         _type_: _description_
     """
-    with open(my_str, "r", encoding="utf-8") as f:
-        return json.load(f)
+    if my_str is not None and my_str:
+        with open(my_str, "r", encoding="utf-8") as f:
+            return json.load(f)

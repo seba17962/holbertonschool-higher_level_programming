@@ -3,7 +3,6 @@
 arguments to a Python list,
 and then save them to a file
 """
-import json
 import os
 from sys import argv
 

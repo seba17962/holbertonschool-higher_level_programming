@@ -5,5 +5,13 @@ import json
 
 
 def from_json_string(my_str):
+    """_summary_
+
+    Args:
+        my_str (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     with open(my_str, "r", encoding="utf-8") as f:
         return json.load(f)

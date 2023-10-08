@@ -35,6 +35,6 @@ class Student:
         return json_dict
 
     def reload_from_json(self, json):
-        for key, value in json:
+        for key, value in json.items():
             if hasattr(self, key):
                 setattr(self, key, value)

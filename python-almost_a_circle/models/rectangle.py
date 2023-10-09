@@ -8,7 +8,7 @@ class Rectangle(Base):
     """_summary_
 
     Args:
-        Base (_type_): _description_
+        Base (class): case base
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
@@ -67,4 +67,9 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """_summary_
+
+        Returns:
+            _type_: _description_
+        """
         return (self.__width * self.__height)

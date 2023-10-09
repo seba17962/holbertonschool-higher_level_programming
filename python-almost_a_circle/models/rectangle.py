@@ -12,10 +12,10 @@ class Rectangle(Base):
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-        self.height = height
-        self.width = width
-        self.x = x
-        self.y = y
+        self.__height = height
+        self.__width = width
+        self.__x = x
+        self.__y = y
 
     @property
     def width(self):

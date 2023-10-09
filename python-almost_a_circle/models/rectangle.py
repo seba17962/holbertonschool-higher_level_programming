@@ -12,10 +12,10 @@ class Rectangle(Base):
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-        self.__height = height
-        self.__width = width
-        self.__x = x
-        self.__y = y
+        self.height = height
+        self.width = width
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
@@ -67,4 +67,4 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        return (self.__height * self.__width)
+        return (self.__width * self.__height)

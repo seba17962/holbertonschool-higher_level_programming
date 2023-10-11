@@ -93,6 +93,8 @@ class Rectangle(Base):
  - {self.__width}/{self.__height}"
 
     def update(self, *args):
+        """_summary_
+        """
         if len(args) >= 1:
             self.id = args[0]
         if len(args) >= 2:

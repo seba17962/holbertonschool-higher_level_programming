@@ -19,4 +19,4 @@ class Square(Rectangle):
         Returns:
             _type_: _description_
         """
-        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.height}"
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"

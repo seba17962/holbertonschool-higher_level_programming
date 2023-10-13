@@ -110,10 +110,10 @@ class Rectangle(Base):
         """_summary_
         """
         representation = {
-            'id' : self.id,
-            'width' : self.width,
-            'height' : self.height,
-            'x' : self.x,
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
             'y': self.y
         }
         return representation

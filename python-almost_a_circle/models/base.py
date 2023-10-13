@@ -48,3 +48,7 @@ class Base:
         filename = class_name + ".json"
         with open(filename, "w") as file:
             file.write(jsn_d)
+
+    @staticmethod
+    def from_json_string(json_string):
+        return json.load(json_string)

@@ -95,25 +95,13 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """_summary_
         """
-        if args:
-            if len(args) >= 1:
-                self.id = args[0]
-            if len(args) >= 2:
-                self.__width = args[1]
-            if len(args) >= 3:
-                self.__height = args[2]
-            if len(args) >= 4:
-                self.__x = args[3]
-            if len(args) >= 5:
-                self.__y = args[4]
+        if args and len(args) > 0:
+
+            opt_args = ["id", "width", "height", "x", "y"]
+
+            for count, arg in enumerate(args):
+                setattr(self, opt_args[count], arg)
+
         else:
-            if "id" in kwargs:
-                self.id = kwargs["id"]
-            if "width" in kwargs:
-                self.__width = kwargs["width"]
-            if "height" in kwargs:
-                self.__height = kwargs["height"]
-            if "x" in kwargs:
-                self.__x = kwargs["x"]
-            if "y" in kwargs:
-                self.__y = kwargs["y"]
+            for key, value in kwargs.items():
+                setattr(self, key, value)
